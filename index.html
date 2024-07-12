@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font/flaticon.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
 
@@ -15,11 +16,51 @@
 </head>
 <body class="theme-default home">
 
-	<div id="top-navigation">
+	<section id="main-navigation">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-md-6">
+					<nav class="main-menu">
+						<ul class="top-menu d-flex flex-row navigation justify-content-end list-unstyled">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item menu-item-has-children"><a href="blog.html">Blog</a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="index.html">Sub Item</a></li>
+									<li class="menu-item menu-item-has-children"><a href="index.html">Sub Item</a>
+										<ul class="submenu">
+											<li class="menu-item"><a href="index.html">Sub Item</a></li>
+										</ul></li>
+									<li class="menu-item"><a href="index.html">Sub Item</a></li>
+								</ul></li>
+							<li class="menu-item"><a href="widgehts.html">Widgets</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+							<li class="menu-item special-menu"><a href="join.html">Join</a></li>
+						</ul>
+					</nav>
 
-	</div>
+					<button type="button" class="navbar-open">
+						<i class="mobile-nav-toggler flaticon flaticon-menu">
+						</i>
+					</button>
+				</div>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn">
+					<i class="flaticon flaticon-close"></i>
+				</div>
+				<nav class="menu-box">
+					<ul class="navigation clearfix"></ul>
+				</nav>
+			</div><!-- end Mobile Menu -->
+
+		</div>
+	</section><!-- end section main-navigation -->
 
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/main-script.js"></script>
 </body>
 </html>
