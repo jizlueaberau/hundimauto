@@ -7,37 +7,44 @@
 			'<div class="dropdown-btn"><i class="flaticon flaticon-arrow-down-sign-to-navigate"></i></div>'
 		);
 
-		// dropdown button
-		$('.main-menu li.menu-item-has-children .dropdown-btn').on('click', function() {
-			$(this).prev('ul').slideToggle(500);
-		});
-
 		// disable dropdown parent link
-		$('.main-menu .navigation li.menu-item-has-children > a, .hidden-bar .side-menu li.menu-item-has-children > a').on('click', function(e) {
+		$('.main-menu .navigation li.menu-item-has-children > a').on('click', function(e) {
 			e.preventDefault();
 		});
 	}
 
 	// mobile nav
 	if ($('.mobile-menu').length) {
-		var mobileMenuContent = $('#main-navigation .navigation').html();
+		var mobileMenuContent = $('#header .navigation').html();
 		$('.mobile-menu .navigation').append(mobileMenuContent);
-		$('.sticky-header .navigation').append(mobileMenuContent);
-		$('.mobile-menu .close-btn').on('click', function() {
-			$('body').removeClass('monile-menu-visible');
-		});
 
 		// dropdown button
 		$('.mobile-menu li.menu-item-has-children .dropdown-btn').on('click', function() {
-			$(this).prev('ul').slideToggle(500);
+			$(this).toggleClass('open').prev('ul').slideToggle(500);
 		});
 
 		// Menu Toggle Button
 		$('.mobile-nav-toggler').on('click', function() {
-			$('body').addClass('mobile-menu-visible');
-		});
-		$('.mobile-menu .menu-backdrop, .mobile-menu .close-btn').on('click', function() {
-			$('body').removeClass('mobile-menu-visible');
+			$(this).toggleClass('is-active');
+			$('body').toggleClass('mobile-menu-visible');
 		});
 	}
+
+	// sticky navigation scroll listener
+	var lastScrollTop = 0; var num = 20;
+
+	$(window).bind('scroll', function() {
+		var st = window.pageYOffset || document.documentElement.scrollTop;
+		if ($(window).scrollTop() > num) {
+			$('#header').addClass('sticky')
+		} else {
+			$('#header').removeClass('sticky');
+		}
+		if (st > lastScrollTop && $('#header').hasClass('sticky')) {
+			$('#header').removeClass('show');
+		} else {
+			$('#header').addClass('show');
+		}
+		lastScrollTop = st <= 0 ? 0 : st;
+	});
 })(jQuery);
