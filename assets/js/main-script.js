@@ -47,4 +47,11 @@
 		}
 		lastScrollTop = st <= 0 ? 0 : st;
 	});
+
+	// debug windo
+	$(document).ready(function() {
+		$('#debug').append('<p>'+
+			'w: '+$(window).width()+'px<br>'+
+			'h: '+$(window).height()+'px</p>');
+	});
 })(jQuery);
