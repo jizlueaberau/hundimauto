@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="assets/css/base.css">
 	<link rel="stylesheet" href="assets/css/navigation.css">
 	<link rel="stylesheet" href="assets/css/hamburgers.min.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
 
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
 </head>
 <body class="home theme-default">
 
-	<section id="header">
+	<header id="header">
 		<div id="theme">
 			<a href="/"><img id="logo" src="assets/images/logo-hia.svg" alt="Hund im Auto" /></a>
 		</div>
@@ -63,16 +64,50 @@
 			</div><!-- end Mobile Menu -->
 
 		</div>
-	</section><!-- end section header -->
+	</header><!-- end header parts -->
 
+	<section id="content">
 
-<br /><br /><br /><br /><br /><br /><br /><br />
+		<article id="intro" class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 gx-5">
+					<hgroup>
+						<h1 class="animate__animated animate__fadeInUp"><a href="/">hundimauto.ch</a><span>&nbsp;&ndash;&nbsp;Hundegitter und Hundeboxen <strong>nach Mass</strong> in bewährter Schweizer Premium Qualität.</span></h1>
+						<h2 class="animate__animated animate__fadeInUp">Ihr Ansprechpartner für <a href="#">optimale Transportlösungen</a>, qualitativ <a href="#">hochwertig und fachmännisch</a> hergestellte <a href="#">Hundegitter</a> und <a href="#">Hundeboxen</a> nach Mass für Ihren <strong>HUND</strong> im <strong>AUTO</strong>.</h2>
+					</hgroup>
+					<div class="container-fluid g-0 contact animate__animated animate__fadeInUp animate__delay-1s">
+						<div class="row">
+							<div class="col-lg-3 col-md-12">
+								<button type="button" class="btn btn-primary">Offerte anfragen</button>
+							</div>
+							<div class="col-lg-9 d-none d-lg-block">
+								<p class="justify-right">oder kontaktieren Sie uns direkt unter <a href="tel:+41 44 875 02 22">044 875 02 22</a> oder <a href="mailto:info@hundimauto.ch">info@hundimauto.ch</a>.
+								<span class="note">Bei Kontaktaufnahme via E-Mail <strong>bitte immer</strong> eine Telefonnummer angeben.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article><!-- end section intro -->
 
-	<div class="container">
+		<article id="video" class="container-fluid g-0 animate__animated animate__fadeInUp animate__delay-1s">
+			<div class="row">
+				<div class="col-12">
+					<div class="ratio ratio-16x9">
+						<img src="assets/images/picture-2600.jpeg" alt="" />
+					</div>
+				</div>
+			</div>
+		</article><!-- end section video -->
+
+		<br /><br /><br /><br />
+
+			<div class="container">
 		<div class="row">
 			<div class="col-md-12">
+
 				<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur pulvinar leo, in sollicitudin nulla placerat non. Aliquam lectus sapien, tristique nec sem eget, suscipit accumsan lorem. In hac habitasse platea dictumst. Nunc in tempor dui. Cras mollis diam urna. Fusce eu metus nec nunc tincidunt ultrices non at nulla. Ut quis purus vel lacus aliquam rutrum quis sit amet tellus. Maecenas lectus purus, egestas consectetur quam ut, rhoncus ornare nulla. Nunc rhoncus nibh augue, in tristique lorem malesuada ac. Cras dapibus, nunc sed accumsan iaculis, tortor metus varius nisi, vel tempor purus justo vitae justo. Nulla sollicitudin, arcu vel vestibulum rutrum, urna mauris suscipit velit, vitae lacinia sem orci in libero.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Sed efficitur pulvinar leo</a>, in sollicitudin nulla placerat non. Aliquam lectus sapien, tristique nec sem eget, suscipit accumsan lorem. In hac habitasse platea dictumst. Nunc in tempor dui. Cras mollis diam urna. Fusce eu metus nec nunc tincidunt ultrices non at nulla. Ut quis purus vel lacus aliquam rutrum quis sit amet tellus. Maecenas lectus purus, egestas consectetur quam ut, rhoncus ornare nulla. Nunc rhoncus nibh augue, in tristique lorem malesuada ac. Cras dapibus, nunc sed accumsan iaculis, tortor metus varius nisi, vel tempor purus justo vitae justo. Nulla sollicitudin, arcu vel vestibulum rutrum, urna mauris suscipit velit, vitae lacinia sem orci in libero.
 </p>
 Proin sagittis et nulla nec eleifend. Cras porttitor arcu id vestibulum maximus. Cras sed interdum neque, sit amet venenatis nulla. Aliquam sem dui, ornare a urna nec, pulvinar facilisis tellus. Etiam in nunc id massa fringilla eleifend vel et nulla. Phasellus aliquet metus sit amet dictum convallis. Donec rutrum tincidunt tellus ac venenatis. Nulla aliquet diam eu tristique euismod.
 <p>
@@ -106,6 +141,14 @@ Etiam fermentum fermentum dui eu rutrum. Nunc pretium dui nec facilisis aliquam.
 				</p>
 			</div>
 		</div>
+	</div>
+
+	</section><!-- /end section content -->
+
+
+
+
+	<div id="debug">
 	</div>
 
 	<script src="assets/js/jquery-3.7.1.min.js"></script>
