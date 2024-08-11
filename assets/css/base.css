@@ -21,6 +21,7 @@ body {
 	font-family: var(--font-sans);
 	font-size: var(--font-size);
 	color: var(--color-text);
+	background-color: #fafafa;
 	line-height: 1.5;
 }
 p {
@@ -226,8 +227,12 @@ h4 {
 
 /* Video */
 
-#video {
+.video-stage {
+	background-color: red;
+}
 
+.embed-container {
+	background-color: green;
 }
 
 /* Breakpoints */
