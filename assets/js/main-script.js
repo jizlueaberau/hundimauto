@@ -48,6 +48,52 @@
 		lastScrollTop = st <= 0 ? 0 : st;
 	});
 
+	// animation css waypoints script
+	function onScrollInit(items, trigger) {
+		items.each(function() {
+			var osElement = $(this),
+			    osAnimationClass = osElement.attr('data-animation'),
+			    osAnimationDelay = osElement.attr('data-delay');
+
+			osElement.css({
+				'-webkit-animation-delay': osAnimationDelay,
+				'-moz-animation-delay': osAnimationDelay,
+				'animation-delay': osAnimationDelay
+			});
+
+			var osTrigger = (trigger) ? trigger : osElement;
+
+			osTrigger.waypoint(function() {
+				osElement.addClass('animate__animated').addClass(osAnimationClass);
+			}, {
+				triggerOnce: true,
+				offset: '110%'
+			});
+		});
+	}
+	onScrollInit($('.os-animation'));
+
+	// initializing testimonials swiper
+	var swiper = new Swiper("#testimonials .swiper", {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			dynamicBullets: true
+		},
+		breakpoints: {
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 90
+			}
+		}
+	});
+
 	// debug window
 	$(document).ready(function() {
 		$('#debug').append('<p>'+
