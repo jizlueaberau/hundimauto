@@ -15,8 +15,6 @@
 	--color-white: #fff;
 	--underline-offset-y: 0px;
 	--animate-delay: 0.5s;
-	--swiper-navigation-size: 180px;
-	--swiper-theme-color: #d2ba8b;
 }
 
 body {
@@ -89,8 +87,7 @@ h4 {
 
 /* Anchors */
 
-#content a,
-#content .heading h2 {
+#content a {
 	--underline-intrinsic-size: 5;
 	--underline-size: 11;
 	--underline-size-scale: calc(var(--underline-size) / var(--underline-intrinsic-size));

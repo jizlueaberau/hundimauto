@@ -48,6 +48,11 @@
 		lastScrollTop = st <= 0 ? 0 : st;
 	});
 
+	// make all animations fadeinup on mobile
+	if ($(window).width() < 992) {
+		$('div').attr('data-animation','animate__fadeInUp');
+	}
+
 	// animation css waypoints script
 	function onScrollInit(items, trigger) {
 		items.each(function() {
