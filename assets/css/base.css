@@ -60,13 +60,26 @@ h3 {
 h4 {
 
 }
+
+/* Headings */
+
+.heading {
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
 .heading h2 {
 	display: inline;
 	margin: 0 auto;
 }
-.heading {
-	margin-bottom: 2.5rem;
-	text-align: center;
+.heading .heading-line {
+	display: block;
+	margin: 0 auto;
+	width: 58px;
+	height: 8px;
+	border-radius: 4px;
+	margin-top: 1.25rem;
+
+	background-color: var(--color-bg-brown);
 }
 
 /* Bootstrap specific */
@@ -208,6 +221,10 @@ h4 {
 	-o-transition: all 500ms ease;
 }
 
+/* Themeing */
+
+
+
 /* Intro section */
 
 #intro {
@@ -241,11 +258,6 @@ h4 {
 
 #video {
 
-}
-
-#reviews {
-	padding: 96px 0;
-	text-align: center;
 }
 
 /* Swiper base styling */
@@ -364,41 +376,7 @@ h4 {
 /* Footer & Contacts */
 
 #footer {
-	font-size: 1.25rem;
-}
-#footer .logo {
 
-}
-#logo-footer {
-	max-height: 240px;
-}
-#footer p {
-}
-#contact {
-	margin: 0;
-	padding: 20px 0;
-}
-#contact .btn-primary {
-	width: 100%;
-	margin-bottom: 20px;
-}
-.theme-default #footer .top {
-	background-color: #d2ba8b;
-}
-#footer .top {
-	padding: 1.5rem 0;
-}
-#footer .top .col {
-
-}
-#footer .bottom > div {
-	position: relative;
-	height: 100px;
-	background-size: auto 100%;
-	margin-bottom: 20px;
-}
-.theme-default #footer .bottom > div {
-	background-image: url(../images/logo-bg-footer-default.png);
 }
 
 /* Breakpoints */
@@ -443,6 +421,11 @@ h4 {
 	}
 	.heading {
 		margin-bottom: 6rem;
+	}
+	.heading .heading-line {
+		width: 112px;
+		height: 10px;
+		border-radius: 5px;
 	}
 	/* Products */
 	#products {
