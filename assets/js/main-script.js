@@ -48,6 +48,78 @@
 		lastScrollTop = st <= 0 ? 0 : st;
 	});
 
+	// make all animations fadeinup on mobile
+	if ($(window).width() < 992) {
+		$('div').attr('data-animation','animate__fadeInUp');
+	}
+
+	// animation css waypoints script
+	function onScrollInit(items, trigger) {
+		items.each(function() {
+			var osElement = $(this),
+			    osAnimationClass = osElement.attr('data-animation'),
+			    osAnimationDelay = osElement.attr('data-delay');
+
+			osElement.css({
+				'-webkit-animation-delay': osAnimationDelay,
+				'-moz-animation-delay': osAnimationDelay,
+				'animation-delay': osAnimationDelay
+			});
+
+			var osTrigger = (trigger) ? trigger : osElement;
+
+			osTrigger.waypoint(function() {
+				osElement.addClass('animate__animated').addClass(osAnimationClass);
+			}, {
+				triggerOnce: true,
+				offset: '110%'
+			});
+		});
+	}
+	onScrollInit($('.os-animation'));
+
+	// initializing testimonials swiper
+	var swiper = new Swiper("#testimonials .swiper", {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			dynamicBullets: true
+		},
+		breakpoints: {
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 90
+			}
+		}
+	});
+
+	// vimeo autoplay script
+	// https://jsfiddle.net/oxf4dtn3/
+
+	var players = [];
+	$('.video-frame').each(function() {
+		players.push({
+			player: new Vimeo.Player($(this).find("iframe").get(0)),
+			top: $(this).position().top,
+			status: "paused"
+		});
+	});
+
+	var viewportHeight = $(window).height();
+	$(window).on('scroll', function() {
+		var scrollPos = $(window).scrollTop();
+		for (var i = 0; i < players.length; i++) {
+			var elementFromTop = players[i].top - scrollPos;
+			var status = (elementFromTop > 0 && elementFromTop < players[i].top + viewportHeight) ? "play" : "pause";
+		}
+	});
+
 	// debug window
 	$(document).ready(function() {
 		$('#debug').append('<p>'+

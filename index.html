@@ -5,12 +5,14 @@
 	<title>Hund im Auto</title>
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="color-scheme" content="light dark" />
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/font/flaticon.css">
-	<link rel="stylesheet" href="assets/css/base.css">
 	<link rel="stylesheet" href="assets/css/navigation.css">
 	<link rel="stylesheet" href="assets/css/hamburgers.min.css">
 	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/base.css">
 
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,10 +74,10 @@
 			<div class="row">
 				<div class="col-md-10 offset-md-1 gx-5">
 					<hgroup>
-						<h1 class="animate__animated animate__fadeInUp"><a href="/">hundimauto.ch</a><span>&nbsp;&ndash;&nbsp;Hundegitter und Hundeboxen <strong>nach Mass</strong> in bewährter Schweizer Premium Qualität.</span></h1>
-						<h2 class="animate__animated animate__fadeInUp">Ihr Ansprechpartner für <a href="#">optimale Transportlösungen</a>, qualitativ <a href="#">hochwertig und fachmännisch</a> hergestellte <a href="#">Hundegitter</a> und <a href="#">Hundeboxen</a> nach Mass für Ihren <strong>HUND</strong> im <strong>AUTO</strong>.</h2>
+						<h1 class="os-animation" data-animation="animate__fadeInUp" data-delay=".3s"><a href="/">hundimauto.ch</a><span>&nbsp;&ndash;&nbsp;Hundegitter und Hundeboxen <strong>nach Mass</strong> in bewährter Schweizer Premium Qualität.</span></h1>
+						<h2 class="os-animation" data-animation="animate__fadeInUp" data-delay=".3s">Ihr Ansprechpartner für <a href="#">optimale Transportlösungen</a>, qualitativ <a href="#">hochwertig und fachmännisch</a> hergestellte <a href="#">Hundegitter</a> und <a href="#">Hundeboxen</a> nach Mass für Ihren <strong>HUND</strong> im <strong>AUTO</strong>.</h2>
 					</hgroup>
-					<div class="container-fluid g-0 contact animate__animated animate__fadeInUp animate__delay-1s">
+					<div class="container-fluid g-0 contact os-animation" data-animation="animate__fadeInUp" data-delay=".6s">
 						<div class="row">
 							<div class="col-lg-3 col-md-12">
 								<button type="button" class="btn btn-primary">Offerte anfragen</button>
@@ -90,12 +92,13 @@
 			</div>
 		</article><!-- end section intro -->
 
-		<article class="container-fluid g-0 animate__animated animate__fadeInUp animate__delay-1s">
+		<article class="container-fluid g-0 os-animation" data-animation="animate__fadeInUp" data-delay=".9s">
+
 			<div class="row">
 				<div class="col-12">
-					<div class="video-stage ratio ratio-16x9">
+					<div class="video-frame ratio ratio-16x9">
 						
-						<img src="assets/videos/video-start-background.jpg" alt="" />
+						<iframe id="video" src="https://player.vimeo.com/video/1001908180?autoplay=1&loop=1&color=d2ba8b&title=0&byline=0&portrait=0&muted=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 					</div>
@@ -103,59 +106,223 @@
 			</div>
 		</article><!-- end section video -->
 
+		<article id="testimonials" class="jumnbotron jumbotron-fluid">
+			<div class="container">
+
+				<div class="col-12">
+					<hgroup class="heading os-animation" data-animation="animate__fadeInUp" >
+						<h2>Kundenmeinungen</h2>
+					</hgroup>
+					<div class="swiper os-animation" data-animation="animate__fadeInUp" data-delay=".4s">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<div class="testimonial row">
+									<div class="col-lg-4">
+										<img src="assets/images/client2.jpg" alt="" />
+									</div>
+									<div class="col-lg-8">
+										<blockquote>
+											<img class="quote" src="assets/images/noun-quote-5767821.svg" alt="" />
+											Proin sagittis et nulla nec eleifend. Cras porttitor arcu id vestibulum maximus. Cras sed interdum neque, sit amet venenatis nulla. Aliquam sem dui, ornare a urna nec, pulvinar facilisis tellus.
+											<cite>&#8212; Alessa Stauffer, Redog</cite>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testimonial row">
+									<div class="col-lg-4">
+										<img src="assets/images/client2.jpg" alt="" />
+									</div>
+									<div class="col-lg-8">
+										<blockquote class="text-justify">
+											<img class="quote" src="assets/images/noun-quote-5767821.svg" alt="" />
+											Proin sagittis et nulla nec eleifend. Cras porttitor arcu id vestibulum maximus. Cras sed interdum neque, sit amet venenatis nulla.
+											<cite>&#8212; Alessa Stauffer, Redog</cite>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testimonial row">
+									<div class="col-lg-4">
+										<img src="assets/images/client2.jpg" alt="" />
+									</div>
+									<div class="col-lg-8">
+										<blockquote class="text-justify">
+											<img class="quote" src="assets/images/noun-quote-5767821.svg" alt="" />
+											Proin sagittis et nulla nec eleifend. Cras porttitor arcu id vestibulum maximus. Cras sed interdum neque, sit amet venenatis nulla. Aliquam sem dui, ornare a urna nec, pulvinar facilisis tellus.
+											<cite>&#8212; Alessa Stauffer, Redog</cite>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div><!-- end swiper -->
+				</div>
+			</div><!-- end container -->
+		</article><!-- end section testimonials -->
+
+		<article id="products" class="container-fluid px-0">
+			<div class="row justify-content-center">
+
+				<div class="col-12 os-animation" data-animation="animate__fadeInUp">
+					<hgroup class="heading">
+						<h2>Unsere Produkte</h2>
+					</hgroup>
+				</div>
+
+				<div class="row">
+
+					<div class="col-sm-12 col-md-6 p-0 os-animation" data-animation="animate__bounceInLeft" data-delay=".2s">
+						<div class="product-item overflow-hidden">
+							<img src="assets/images/picture-2.jpg" class="product-image w-100" />
+							<div class="overlay"><h3><a href="#">Hundegitter nach Mass</h3></a></div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 p-0 os-animation" data-animation="animate__bounceInRight" data-delay=".2s">
+						<div class="product-item overflow-hidden">
+							<img src="assets/images/picture-3.jpg" class="product-image w-100" />
+							<div class="overlay"><h3><a href="#">Hundeboxen nach Mass</h3></a></div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 p-0 os-animation" data-animation="animate__bounceInLeft" data-delay=".2s">
+						<div class="product-item overflow-hidden">
+							<img src="assets/images/picture-1.jpg" class="product-image w-100" />
+							<div class="overlay"><h3><a href="#">Fahrzeugausbauten nach Mass</h3></a></div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 p-0 os-animation" data-animation="animate__bounceInRight" data-delay=".2s">
+						<div class="product-item overflow-hidden">
+							<img src="assets/images/picture-4.jpg" class="product-image w-100" />
+							<div class="overlay"><h3><a href="#">Holzarbeiten nach Mass</h3></a></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</article><!-- end section products -->
+
+		<article class="get-offer container-fluid px-0">
+			<div class="row">
+				
+				<div class="col-12 os-animation" data-animation="animate__fadeInUp">
+					<hgroup class="heading">
+						<h2>Wünschen Sie eine unverbindliche Offerte?</h2>
+					</hgroup>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-2 offset-md-2 col-lg-3 offset-lg-1 cta os-animation" data-animation="animate__bounceInLeft">
+							<button type="button" class="btn btn-primary">Offerte anfragen</button>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-7 os-animation" data-animation="animate__bounceInRight">
+							<p>oder kontaktieren Sie uns direkt unter <a href="tel:+41 44 875 02 22">044 875 02 22</a> oder <a href="mailto:info@hundimauto.ch">info@hundimauto.ch</a>.
+								<span class="note">Bei Kontaktaufnahme via E-Mail <strong>bitte immer</strong> eine Telefonnummer angeben.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</article>
+
 		<br /><br /><br /><br />
 
-			<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-
-				<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Sed efficitur pulvinar leo</a>, in sollicitudin nulla placerat non. Aliquam lectus sapien, tristique nec sem eget, suscipit accumsan lorem. In hac habitasse platea dictumst. Nunc in tempor dui. Cras mollis diam urna. Fusce eu metus nec nunc tincidunt ultrices non at nulla. Ut quis purus vel lacus aliquam rutrum quis sit amet tellus. Maecenas lectus purus, egestas consectetur quam ut, rhoncus ornare nulla. Nunc rhoncus nibh augue, in tristique lorem malesuada ac. Cras dapibus, nunc sed accumsan iaculis, tortor metus varius nisi, vel tempor purus justo vitae justo. Nulla sollicitudin, arcu vel vestibulum rutrum, urna mauris suscipit velit, vitae lacinia sem orci in libero.
-</p>
-Proin sagittis et nulla nec eleifend. Cras porttitor arcu id vestibulum maximus. Cras sed interdum neque, sit amet venenatis nulla. Aliquam sem dui, ornare a urna nec, pulvinar facilisis tellus. Etiam in nunc id massa fringilla eleifend vel et nulla. Phasellus aliquet metus sit amet dictum convallis. Donec rutrum tincidunt tellus ac venenatis. Nulla aliquet diam eu tristique euismod.
-<p>
-Duis ac facilisis ligula, sit amet dignissim arcu. Praesent dapibus justo nec eros tristique, in consequat lorem luctus. Suspendisse lacus libero, consequat vitae euismod fringilla, euismod eget eros. Vestibulum vitae leo congue, maximus sapien a, auctor ipsum. Praesent diam arcu, pulvinar in nunc id, dictum mollis est. Phasellus id velit dignissim, sagittis neque pharetra, rhoncus augue. Integer molestie erat vestibulum, lacinia dui quis, ultricies eros. Phasellus tempus est imperdiet massa tempus, eget varius ex ornare. Sed ut rutrum orci. Donec et dignissim metus, quis dictum mauris. Sed sodales, nunc id fermentum luctus, risus erat molestie dui, quis suscipit risus leo fermentum tortor. Phasellus placerat maximus porttitor. Pellentesque auctor, magna ac suscipit mollis, diam tellus faucibus augue, ac tempus mauris tellus nec sapien. Nam ultricies rutrum urna ullamcorper laoreet. Ut eu sollicitudin dui.
-</p>
-In et euismod nunc. Maecenas viverra vehicula nunc, at scelerisque justo pharetra a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed et varius urna. Cras magna diam, elementum vitae dui ac, scelerisque pulvinar tellus. Phasellus fringilla diam eu erat feugiat efficitur. Vestibulum consectetur id tellus eu sollicitudin. Vestibulum aliquam, lacus consequat imperdiet porta, felis augue venenatis dolor, quis consequat purus nisi a leo. Donec dignissim tristique feugiat.
-<p>
-Etiam fermentum fermentum dui eu rutrum. Nunc pretium dui nec facilisis aliquam. Nulla ullamcorper leo nec efficitur fringilla. Maecenas pellentesque, est in dignissim tempus, massa nibh varius enim, quis posuere risus turpis porttitor est. Phasellus iaculis euismod dolor a consectetur. Donec et nunc erat. Nullam cursus vehicula purus vel fermentum. Nunc vulputate erat in metus porttitor porta. Quisque dictum mollis dignissim. Donec tellus risus, mattis eget justo a, ornare efficitur nibh. Suspendisse fringilla, ipsum at pretium facilisis, nunc sem dapibus arcu, non sagittis leo lorem nec nibh. Sed eu sodales libero, vitae cursus erat.
-				</p>
-				<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur pulvinar leo, in sollicitudin nulla placerat non. Aliquam lectus sapien, tristique nec sem eget, suscipit accumsan lorem. In hac habitasse platea dictumst. Nunc in tempor dui. Cras mollis diam urna. Fusce eu metus nec nunc tincidunt ultrices non at nulla. Ut quis purus vel lacus aliquam rutrum quis sit amet tellus. Maecenas lectus purus, egestas consectetur quam ut, rhoncus ornare nulla. Nunc rhoncus nibh augue, in tristique lorem malesuada ac. Cras dapibus, nunc sed accumsan iaculis, tortor metus varius nisi, vel tempor purus justo vitae justo. Nulla sollicitudin, arcu vel vestibulum rutrum, urna mauris suscipit velit, vitae lacinia sem orci in libero.
-</p>
-Proin sagittis et nulla nec eleifend. Cras porttitor arcu id vestibulum maximus. Cras sed interdum neque, sit amet venenatis nulla. Aliquam sem dui, ornare a urna nec, pulvinar facilisis tellus. Etiam in nunc id massa fringilla eleifend vel et nulla. Phasellus aliquet metus sit amet dictum convallis. Donec rutrum tincidunt tellus ac venenatis. Nulla aliquet diam eu tristique euismod.
-<p>
-Duis ac facilisis ligula, sit amet dignissim arcu. Praesent dapibus justo nec eros tristique, in consequat lorem luctus. Suspendisse lacus libero, consequat vitae euismod fringilla, euismod eget eros. Vestibulum vitae leo congue, maximus sapien a, auctor ipsum. Praesent diam arcu, pulvinar in nunc id, dictum mollis est. Phasellus id velit dignissim, sagittis neque pharetra, rhoncus augue. Integer molestie erat vestibulum, lacinia dui quis, ultricies eros. Phasellus tempus est imperdiet massa tempus, eget varius ex ornare. Sed ut rutrum orci. Donec et dignissim metus, quis dictum mauris. Sed sodales, nunc id fermentum luctus, risus erat molestie dui, quis suscipit risus leo fermentum tortor. Phasellus placerat maximus porttitor. Pellentesque auctor, magna ac suscipit mollis, diam tellus faucibus augue, ac tempus mauris tellus nec sapien. Nam ultricies rutrum urna ullamcorper laoreet. Ut eu sollicitudin dui.
-</p>
-In et euismod nunc. Maecenas viverra vehicula nunc, at scelerisque justo pharetra a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed et varius urna. Cras magna diam, elementum vitae dui ac, scelerisque pulvinar tellus. Phasellus fringilla diam eu erat feugiat efficitur. Vestibulum consectetur id tellus eu sollicitudin. Vestibulum aliquam, lacus consequat imperdiet porta, felis augue venenatis dolor, quis consequat purus nisi a leo. Donec dignissim tristique feugiat.
-<p>
-Etiam fermentum fermentum dui eu rutrum. Nunc pretium dui nec facilisis aliquam. Nulla ullamcorper leo nec efficitur fringilla. Maecenas pellentesque, est in dignissim tempus, massa nibh varius enim, quis posuere risus turpis porttitor est. Phasellus iaculis euismod dolor a consectetur. Donec et nunc erat. Nullam cursus vehicula purus vel fermentum. Nunc vulputate erat in metus porttitor porta. Quisque dictum mollis dignissim. Donec tellus risus, mattis eget justo a, ornare efficitur nibh. Suspendisse fringilla, ipsum at pretium facilisis, nunc sem dapibus arcu, non sagittis leo lorem nec nibh. Sed eu sodales libero, vitae cursus erat.
-				</p>
-				<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur pulvinar leo, in sollicitudin nulla placerat non. Aliquam lectus sapien, tristique nec sem eget, suscipit accumsan lorem. In hac habitasse platea dictumst. Nunc in tempor dui. Cras mollis diam urna. Fusce eu metus nec nunc tincidunt ultrices non at nulla. Ut quis purus vel lacus aliquam rutrum quis sit amet tellus. Maecenas lectus purus, egestas consectetur quam ut, rhoncus ornare nulla. Nunc rhoncus nibh augue, in tristique lorem malesuada ac. Cras dapibus, nunc sed accumsan iaculis, tortor metus varius nisi, vel tempor purus justo vitae justo. Nulla sollicitudin, arcu vel vestibulum rutrum, urna mauris suscipit velit, vitae lacinia sem orci in libero.
-</p>
-Proin sagittis et nulla nec eleifend. Cras porttitor arcu id vestibulum maximus. Cras sed interdum neque, sit amet venenatis nulla. Aliquam sem dui, ornare a urna nec, pulvinar facilisis tellus. Etiam in nunc id massa fringilla eleifend vel et nulla. Phasellus aliquet metus sit amet dictum convallis. Donec rutrum tincidunt tellus ac venenatis. Nulla aliquet diam eu tristique euismod.
-<p>
-Duis ac facilisis ligula, sit amet dignissim arcu. Praesent dapibus justo nec eros tristique, in consequat lorem luctus. Suspendisse lacus libero, consequat vitae euismod fringilla, euismod eget eros. Vestibulum vitae leo congue, maximus sapien a, auctor ipsum. Praesent diam arcu, pulvinar in nunc id, dictum mollis est. Phasellus id velit dignissim, sagittis neque pharetra, rhoncus augue. Integer molestie erat vestibulum, lacinia dui quis, ultricies eros. Phasellus tempus est imperdiet massa tempus, eget varius ex ornare. Sed ut rutrum orci. Donec et dignissim metus, quis dictum mauris. Sed sodales, nunc id fermentum luctus, risus erat molestie dui, quis suscipit risus leo fermentum tortor. Phasellus placerat maximus porttitor. Pellentesque auctor, magna ac suscipit mollis, diam tellus faucibus augue, ac tempus mauris tellus nec sapien. Nam ultricies rutrum urna ullamcorper laoreet. Ut eu sollicitudin dui.
-</p>
-In et euismod nunc. Maecenas viverra vehicula nunc, at scelerisque justo pharetra a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed et varius urna. Cras magna diam, elementum vitae dui ac, scelerisque pulvinar tellus. Phasellus fringilla diam eu erat feugiat efficitur. Vestibulum consectetur id tellus eu sollicitudin. Vestibulum aliquam, lacus consequat imperdiet porta, felis augue venenatis dolor, quis consequat purus nisi a leo. Donec dignissim tristique feugiat.
-<p>
-Etiam fermentum fermentum dui eu rutrum. Nunc pretium dui nec facilisis aliquam. Nulla ullamcorper leo nec efficitur fringilla. Maecenas pellentesque, est in dignissim tempus, massa nibh varius enim, quis posuere risus turpis porttitor est. Phasellus iaculis euismod dolor a consectetur. Donec et nunc erat. Nullam cursus vehicula purus vel fermentum. Nunc vulputate erat in metus porttitor porta. Quisque dictum mollis dignissim. Donec tellus risus, mattis eget justo a, ornare efficitur nibh. Suspendisse fringilla, ipsum at pretium facilisis, nunc sem dapibus arcu, non sagittis leo lorem nec nibh. Sed eu sodales libero, vitae cursus erat.
-				</p>
+		<article class="contents container">
+			<div class="row">
+				<div class="col-8 offset-2">
+					<h1>Ich bin eine Überschrift</h1>
+					<p class="lead">Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Pellentesque sit amet erat tincidunt, maximus magna eget, porta quam. Maecenas consequat fermentum odio sit amet tincidunt.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet erat tincidunt, maximus magna eget, porta quam. Maecenas consequat fermentum odio sit amet tincidunt. Duis nec nisl mi. Mauris vestibulum purus lorem, quis sollicitudin enim tristique sit amet. Integer ultricies dui libero, nec tempor neque porttitor et. Donec hendrerit, purus et lacinia tincidunt, lorem purus commodo sem, et tincidunt velit lacus vitae neque. Integer neque mauris, volutpat sed scelerisque sit amet, maximus vel metus. Donec mattis rutrum nisi, ut hendrerit mauris <a href="#">ornare blandit</a>.</p>
+					<h2>Ich bin ein Zwischentitel</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet erat tincidunt, maximus magna eget, porta quam. Maecenas consequat fermentum odio sit amet tincidunt. Duis nec nisl mi. Mauris vestibulum purus lorem, quis sollicitudin enim tristique sit amet. Integer ultricies dui libero, nec tempor neque porttitor et. Donec hendrerit, purus et lacinia tincidunt, lorem purus commodo sem, et tincidunt velit lacus vitae neque. Integer neque mauris, volutpat sed scelerisque sit amet, maximus vel metus. Donec mattis rutrum nisi, ut hendrerit mauris ornare blandit.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet erat tincidunt, maximus magna eget, porta quam. Maecenas consequat fermentum odio sit amet tincidunt. Duis nec nisl mi. Mauris vestibulum purus lorem, quis sollicitudin enim tristique sit amet. Integer ultricies dui libero, nec tempor neque porttitor et. Donec hendrerit, purus et lacinia tincidunt, lorem purus commodo sem, et tincidunt velit lacus vitae neque. Integer neque mauris, volutpat sed scelerisque sit amet, maximus vel metus. Donec mattis rutrum nisi, ut hendrerit mauris ornare blandit.</p>
+					<h3>Ich bin ein Untertitel</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet erat tincidunt, maximus magna eget, porta quam. Maecenas consequat fermentum odio sit amet tincidunt. Duis nec nisl mi. Mauris vestibulum purus lorem, quis sollicitudin enim tristique sit amet. Integer ultricies dui libero, nec tempor neque porttitor et. Donec hendrerit, purus et lacinia tincidunt, lorem purus commodo sem, et tincidunt velit lacus vitae neque. Integer neque mauris, volutpat sed scelerisque sit amet, maximus vel metus. Donec mattis rutrum nisi, ut hendrerit mauris ornare blandit.</p>
+				</div>
 			</div>
-		</div>
-	</div>
+		</article>
+
+		<br /><br /><br /><br />
 
 	</section><!-- /end section content -->
 
+	<footer id="footer" class="container-fluid px-0">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg">
+						<strong>Hund im Auto</strong><br />
+						<p>Herrenwisstrasse 30<br />CH-8180 Bülach</p>
+						<div class="container-fluid g-0 coordinates">
+							<div class="row">
+								<div class="col-3">Telefon</div>
+								<div class="col"><a href="tel:+41448750222">+41 44 875 02 22</a></div>
+							</div>
+							<div class="row">
+								<div class="col-3">E-Mail</div>
+								<div class="col"><a href="mailto:info@hundimauto.ch">info@hundimauto.ch</a></div>
+							</div>
+						</div>
+						<ul class="social-media">
+							<li><a href="/" target="_blank" rel="no-follow"><img src="assets/images/facebook-icon.svg" alt="" height="30" /></a></li>
+							<li><a href="/" target="_blank" rel="no-follow"><img src="assets/images/vimeo-icon.svg" alt=""  height="30" /></a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 col-lg-3">
+						<ul class="footer-nav">
+							<li><a href="/">Produkte nach Mass</a></li>
+							<li><a href="/">Herstellung</a></li>
+							<li><a href="/">Zubehör</a></li>
+							<li><a href="/">Preise</a></li>
+							<li><a href="/">Offerte</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 col-lg-3">
+						<ul class="footer-meta-nav">
+							<li><a href="/">Impressum</a></li>
+							<li><a href="/">Datenschutz</a></li>
+							<li><a href="/">AGB</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 col-lg-2 logo">
+						<a href="/"><img src="assets/images/HiA-Sticker50mm-mit-weissem-Rand-OKfix.svg" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row sub-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						&copy;2024 Hund im Auto
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer><!-- end section footer -->
 
 
 
 	<div id="debug">
 	</div>
 
-	<script src="assets/js/jquery-3.7.1.min.js"></script>
-	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="assets/js/main-script.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/froogaloop.js"></script>
+	<script type="text/javascript" src="assets/js/vimeo.player.2.24.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/main-script.js"></script>
 </body>
 </html>
